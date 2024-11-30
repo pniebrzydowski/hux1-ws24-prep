@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import GameBoard from './components/GameBoard.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld />
+      <GameBoard />
     </div>
   </header>
 </template>

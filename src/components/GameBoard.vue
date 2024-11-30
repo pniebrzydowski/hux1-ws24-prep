@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <p>The score is: {{ score ?? 0 }}</p>
+  <div class="board"></div>
+  <div class="board">
+    <h1>Sudoku</h1>
+  </div>
 </template>
 
 <style scoped></style>
