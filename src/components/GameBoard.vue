@@ -1,9 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SudokuBlock from './SudokuBlock.vue'
+
+const { title = 'Sudoku' } = defineProps<{
+  title?: string
+}>()
+</script>
 
 <template>
-  <div class="board"></div>
+  <h1>{{ title }}</h1>
   <div class="board">
-    <h1>Sudoku</h1>
+    <SudokuBlock v-for="n in 9" :key="n" />
   </div>
 </template>
 
