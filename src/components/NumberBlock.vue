@@ -7,7 +7,11 @@
 <style scoped>
 .number-block {
   border: 1px solid #444;
-  width: 24px;
-  height: 24px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
