@@ -13,4 +13,12 @@ const { title = 'Sudoku' } = defineProps<{
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.board {
+  display: grid;
+  width: calc(100vmin - 4rem);
+  height: calc(100vmin - 4rem);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+</style>

@@ -10,6 +10,10 @@ import NumberBlock from './NumberBlock.vue'
 
 <style scoped>
 .sudoku-block {
-  border: 2px solid #666;
+  border: 1px solid #777;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
 }
 </style>
