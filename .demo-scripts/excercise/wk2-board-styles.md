@@ -1,4 +1,4 @@
-# Exercise wk1
+# Exercise wk2
 
 - Responsiveness
 - Scoped styles
