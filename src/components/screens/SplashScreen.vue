@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { useUserStore } from '@/store/user'
-const userStore = useUserStore()
+import { router } from '@/routing/router'
+import StartForm from '../StartForm.vue'
+
+const onSubmit = () => {
+  router.push('/play')
+}
 </script>
 
 <template>
@@ -8,24 +12,12 @@ const userStore = useUserStore()
     <h1>Welcome to Sudoku+</h1>
   </header>
   <main>
-    <input type="text" v-model="userStore.firstName" />
-    <router-link to="/play">Play Game</router-link>
+    <StartForm :on-submit="onSubmit" />
   </main>
 </template>
 
 <style scoped>
-header {
-  padding: 16px 0;
-}
-
-input {
-  width: 100%;
-}
-
-a {
-  display: block;
-  margin-top: 8px;
-  text-align: center;
-  width: 100%;
+main {
+  margin-top: 16px;
 }
 </style>
